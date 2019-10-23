@@ -13,6 +13,3 @@ elif [ "$TRAVIS_OS_NAME" == "osx" ]
 then
     echo "not yet implemented."
 fi
-
-choco install python -- version 3.7.4
-python -m pip install --upgrade pip

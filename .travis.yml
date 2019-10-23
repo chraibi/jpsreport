@@ -15,7 +15,7 @@ matrix:
        - cmake  ..
        - make -j $(nproc)
        - cd ../Utest/Methods
-       - ../../bin/jpsreport ini_Methods.xml
+       - $(pwd)/../../bin/jpsreport ini_Methods.xml
        - python runtest_Method_C.py
 
     - name: linux (gcc9)
@@ -26,7 +26,7 @@ matrix:
        - cmake ..
        - make -j $(nproc)
        - cd ../Utest/Methods
-       - ../../bin/jpsreport ini_Methods.xml
+       - ($pwd)/../../bin/jpsreport ini_Methods.xml
        - python runtest_Method_C.py
 
 before_install:

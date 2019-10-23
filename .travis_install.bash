@@ -4,9 +4,7 @@ if [ "$TRAVIS_OS_NAME" == "linux" ]
 then
     sudo apt install -y \
          g++-9 \
-         libboost-dev \
-         libboost-test-dev \
-         libcgal-dev
+         libboost-dev
     if [ "$TOOLCHAIN" = "gcc" ];
     then
         export CXX="g++-9"
@@ -20,7 +18,7 @@ then
     echo "not yet implemented"
 fi
 
-pip install --user --upgrade pip
+
 pip install --user numpy
 pip install --user scipy
 pip install --user logging
