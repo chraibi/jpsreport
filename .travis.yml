@@ -24,11 +24,12 @@ matrix:
       script:
        - mkdir build && cd build
        - cmake ..
+       - python --version
        - make -j $(nproc)
        - cd ../Utest/Methods
        - $(pwd)/../../bin/jpsreport ini_Methods.xml
-       - python --version
        - python runtest_Method_C.py
+       - cat Utest_Method_C.log
 
 before_install:
     - source .travis_before_install.bash
