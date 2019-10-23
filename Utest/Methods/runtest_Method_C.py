@@ -10,8 +10,7 @@ import logging
 logging.basicConfig(
     filename = "Utest_Method_C.log",
     level    = logging.DEBUG,
-    style    = "{",
-    format   = "{asctime} \t {levelname:8} \t {message} \t",
+    format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S')
 
 logging.info("===== Method C =========================")

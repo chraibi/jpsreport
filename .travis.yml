@@ -25,6 +25,7 @@ matrix:
        - mkdir build && cd build
        - cmake ..
        - python --version
+       - python3 --version
        - make -j $(nproc)
        - cd ../Utest/Methods
        - $(pwd)/../../bin/jpsreport ini_Methods.xml
